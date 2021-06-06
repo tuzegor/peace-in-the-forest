@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Glass Huts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+    <form class="contact-form">
+        <div class="form-block">
+        <input type="text" name="user-first-name" class="form-input" id="form-user-first-name" required placeholder=" ">
+        <label for="form-user-first-name" class="form-field-title">First Name</label>
+        </div>
+        <div class="form-block">
+            <input type="text" name="user-last-name" class="form-input" id="form-user-last-name" minlength="2" required placeholder=" ">
+            <label for="form-user-last-name" class="form-field-title">Last Name</label>
+        </div>
+        <div class="form-block">
+            <input type="email" name="user-email" class="form-input" id="form-user-email" required placeholder=" ">
+            <label for="form-user-email" class="form-field-title">Email</label>
+        </div>
+        <div class="form-block">
+            <input type="text" name="email-subject" class="form-input" id="form-email-subject" placeholder=" ">
+            <label for="form-email-subject" class="form-field-title">Subject</label>
+        </div>
+        <div class="form-block">
+            <textarea name="user-message" class="form-input" id="form-user-message" placeholder=" "></textarea>
+            <label for="form-user-message" class="form-field-title">Message</label>
+        </div>
+        <button type="submit" class="form-submit-btn">send</button>
+    </form>
+</body>
+</html>
