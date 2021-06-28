@@ -18,31 +18,36 @@
 
 <body>
     <!-- HEADER -->
-    <header>
+    <header class="header">
         <div class="header__container container">
             <a href="./index.html" class="logo">
-                <svg width="70" height="65">
+                <svg class="logo__icon">
                     <use href="./images/sprite.svg#icon-logo"></use>
                 </svg>
             </a>
             <nav class="menu">
+                <button class="mobile-menu-open button" type="button">
+                    <svg class="menu__icon">
+                        <use href="./images/sprite.svg#icon-mobile-menu"></use>
+                    </svg>
+                </button>
                 <ul class="menu__list list">
-                    <li>
+                    <li class="menu__item">
                         <a class="menu__link link" href="#">home</a>
                     </li>
-                    <li>
+                    <li class="menu__item">
                         <a class="menu__link link" href="#">the hut</a>
                     </li>
-                    <li>
+                    <li class="menu__item">
                         <a class="menu__link link" href="#">The area</a>
                     </li>
-                    <li>
+                    <li class="menu__item">
                         <a class="menu__link link" href="#">booking</a>
                     </li>
-                    <li>
+                    <li class="menu__item">
                         <a class="menu__link link" href="#">about us</a>
                     </li>
-                    <li>
+                    <li class="menu__item">
                         <a class="menu__link link" href="#">faq</a>
                     </li>
                 </ul>
@@ -54,10 +59,26 @@
     </header>
     <!-- MAIN -->
     <main>
-
+<section class="hero">
+    <div class="hero-container container">
+        <h1 class="hero__title">Find peace in the Forest</h1>
+        <p class="hero__text">Come and stay in out hut hotel near
+        <br>Mariager Fjord in Denmark</p>
+        <div class="booking-price-block">
+            <button class="hero__booking-button button" type="button">
+                Book Now
+            </button>
+            <div class="price-block">
+                <p>from</p>
+                <p>&#8364;3.200</p>
+                <p>per night</p>
+            </div>
+        </div>
+    </div>
+</section>
     </main>
     <!-- FOOTER -->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="footer__container container">
             <div>
                 <h2 class="section-title">Newsletter</h2>
@@ -117,7 +138,7 @@
                 </ul>
             </div>
         </div>
-    </footer>
+    </footer> -->
 </body>
 
 </html>

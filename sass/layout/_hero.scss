@@ -1,0 +1,72 @@
+.hero {
+  text-align: right;
+  padding-top: 95px;
+
+  width: 100%;
+  background-color: $secondaryColorDark;
+  background-image: url(../../images/hero.jpg);
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+.hero-container {
+  position: relative;
+  height: 700px;
+}
+
+.hero__title {
+  margin-right: 27px;
+  margin-bottom: 34px;
+
+  font-weight: 300;
+  font-size: 70px;
+  line-height: (72px/70px);
+
+  text-align: right;
+
+  color: $textColorLight;
+}
+
+.hero__text {
+  display: inline-block;
+  margin-right: 111px;
+
+  font-size: 20px;
+  line-height: (28px/20px);
+
+  text-align: center;
+
+  color: $textColorLight;
+}
+
+.booking-price-block {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  left: 0;
+}
+
+.price-block {
+  background-color: $secondaryColorLight;
+}
+
+@media screen and (max-width: 479px) {
+  .hero__title {
+    margin-right: 0;
+    font-size: 50px;
+    line-height: (72px/50px);
+    text-align: center;
+  }
+
+  .hero__text {
+    margin-right: 0;
+    font-size: 16px;
+    line-height: (28px/16px);
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .hero__text {
+    margin-right: 60px;
+  }
+}
