@@ -42,12 +42,56 @@
 .booking-price-block {
   position: absolute;
   display: flex;
-  bottom: 0;
-  left: 0;
+  bottom: -36px;
+  left: 146px;
+}
+
+.hero__booking-button {
+  width: 263px;
+  height: 100px;
 }
 
 .price-block {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 120px;
+  height: 100px;
+
+  font-family: $secondaryFontFamily;
+  font-size: 12px;
+  line-height: (18px/12px);
+  color: #333333;
   background-color: $secondaryColorLight;
+}
+
+.price {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: (28px/20px);
+  text-align: center;
+}
+
+.price::before {
+  content: 'from';
+  position: absolute;
+  top: 22px;
+  left: 29px;
+}
+.price::after {
+  content: 'per night';
+  position: absolute;
+  bottom: 22px;
+  right: 31px;
+}
+
+.price::before,
+.price::after {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: (18px/12px);
 }
 
 @media screen and (max-width: 479px) {
@@ -63,10 +107,36 @@
     font-size: 16px;
     line-height: (28px/16px);
   }
+
+  .hero__booking-button {
+    width: 150px;
+    height: 60px;
+  }
+
+  .price-block {
+    width: 80px;
+    height: 60px;
+  }
+
+  .price::before {
+    top: 5px;
+    left: 5px;
+  }
+
+  .price::after {
+    bottom: 5px;
+    right: 5px;
+  }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .hero__text {
     margin-right: 60px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .booking-price-block {
+    left: 32px;
   }
 }

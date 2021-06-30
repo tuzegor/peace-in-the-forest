@@ -1,0 +1,83 @@
+.cabins {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+.cabins__description {
+  margin-bottom: 150px;
+}
+.cabins__description-box {
+  max-width: 453px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+.cabins__title {
+  margin-bottom: 11px;
+  color: $secondaryColorDark;
+}
+.cabins__text {
+  margin-bottom: 11px;
+
+  font-weight: 300;
+  font-size: 16px;
+  line-height: (30px/16px);
+}
+
+.cabins__link {
+  display: block;
+  width: 80px;
+  color: $secondaryColorDark;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.87;
+  margin-bottom: 11px;
+}
+
+.cabins__link-text:first-child::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 2px;
+  background-color: $secondaryColorDark;
+}
+
+.cabins__img-box {
+  margin: 0 auto;
+  max-width: 693px;
+}
+
+.cabins-photos__img {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 768px) {
+  .cabins-photos__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin-left: -24px;
+    margin-top: -24px;
+  }
+  .cabins-photos__item {
+    margin-left: 24px;
+    margin-top: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cabins__description {
+    display: flex;
+  }
+  .cabins__text {
+    margin-bottom: 50px;
+  }
+  .cabins-photos__list {
+    flex-wrap: nowrap;
+  }
+  .cabins-photos__item {
+    width: calc((100%-48px) / 3);
+  }
+  .cabins__link {
+    margin-bottom: 0;
+  }
+}
